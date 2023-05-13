@@ -1,0 +1,6 @@
+services:
+  frontend:
+    image: nguyenhaidev/number-detector
+    ports:
+      - "8000:80"
+    restart: unless-stopped
