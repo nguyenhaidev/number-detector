@@ -130,7 +130,7 @@ const Board = () => {
           <Button
             onClick={handleResetBoard}
             label="Reset"
-            className="bg-red-500 border-0 text-white"
+            className="bg-red-500 border-0 text-red-500"
           />
           <Button onClick={onSubmit} label="Submit" />
         </span>
