@@ -43,7 +43,7 @@ const Board = () => {
     const clone = [...data] as TBoard;
     clone[rowId] = [
       ...clone[rowId].slice(0, index),
-      isClearing ? 0 : 1,
+      isClearing ? 0 : 255,
       ...clone[rowId].slice(index + 1),
     ] as TRow;
     handleUpdateBoard(clone);
@@ -53,7 +53,7 @@ const Board = () => {
     const clone = [...data] as TBoard;
     clone[rowId] = [
       ...clone[rowId].slice(0, index),
-      clone[rowId][index] ? 0 : 1,
+      clone[rowId][index] ? 0 : 255,
       ...clone[rowId].slice(index + 1),
     ] as TRow;
     handleUpdateBoard(clone);
